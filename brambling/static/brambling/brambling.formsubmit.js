@@ -11,13 +11,18 @@
  * Licensed under the New BSD License
  * See: http://www.opensource.org/licenses/bsd-license.php
  *
- * Usage:
+ * HTML Usage:
  *
- * <form method="post" action="/mysubmit/" data-submit="ajax">
- *     <input type="text" name="username" />
- *     <input type="password" name="password" />
- *     <button>I will submit this form over ajax!</button>
- * </form>
+ *     <form method="post" action="/mysubmit/" data-submit="ajax">
+ *         <input type="text" name="username" />
+ *         <input type="password" name="password" />
+ *         <button>I will submit this form over ajax!</button>
+ *     </form>
+ *
+ * jQuery usage:
+ *
+ *     $('#myForm').ajaxForm({success: mySuccessFunction, errorcontainer: "#messages"})
+ *
  */
 
 ;(function ($) {
